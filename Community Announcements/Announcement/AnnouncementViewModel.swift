@@ -12,10 +12,10 @@ class AnnouncementViewModel: AnnouncementViewModelProtocol, Identifiable {
     var author: Author
     var title: String
     var body: String
-    var createdAt: Data?
+    var createdAt: Date
     var likes: Int
-    var imageURL: String?
-    
+    var imageURL: URL?
+
     var onPressLike: @MainActor @Sendable () -> Void
     var onPressFavorite: @MainActor @Sendable () -> Void
 
@@ -23,9 +23,9 @@ class AnnouncementViewModel: AnnouncementViewModelProtocol, Identifiable {
          author: Author,
          title: String,
          body: String,
-         createdAt: Data? = nil,
+         createdAt: Date = Date(),
          likes: Int,
-         imageURL: String? = nil,
+         imageURL: URL? = nil,
          onPressLike: @Sendable @escaping () -> Void,
          onPressFavorite: @Sendable @escaping () -> Void) {
         self.id = id

@@ -8,7 +8,9 @@
 import Foundation
 
 class announcementAuthorView: AnnouncementListViewModelProtocol {
-    var itemRecommendationCellViewModels: [any AnnouncementViewModelProtocol]
-    
-    
+    var AnnouncementViewModels: [any AnnouncementViewModelProtocol]
+
+    init(AnnouncementViewModels: [any AnnouncementViewModelProtocol]) {
+        self.AnnouncementViewModels = AnnouncementViewModels
+    }
 }

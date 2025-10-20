@@ -12,9 +12,9 @@ protocol AnnouncementViewModelProtocol: Identifiable {
     var author: Author { get }
     var title: String { get }
     var body: String { get }
-    var createdAt: Data? { get }
+    var createdAt: Date { get }
     var likes: Int { get }
-    var imageURL: String? { get }
+    var imageURL: URL? { get }
 
     var onPressLike: @MainActor () -> Void { get set }
     var onPressFavorite: @MainActor () -> Void { get set }

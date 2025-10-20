@@ -1,34 +1,25 @@
 //
-//  AnnouncementView.swift
+//  AnnouncementCellView.swift
 //  Community Announcements
 //
-//  Created by khaoula hafsia on 19/10/2025.
+//  Created by khaoula hafsia on 20/10/2025.
 //
 
 import SwiftUI
 
-struct AnnouncementView: View {
+struct AnnouncementCellView: View {
     let viewModel: AnnouncementViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Constants.Spacing.medium) {
+        HStack(spacing: Constants.Spacing.medium) {
             headerImage
                 .cornerRadius(Constants.Spacing.large)
-            likeButton
-            announcementTitle
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 150, height: 250)
             announcementBody
-            eventDate
-            announcementAuthor
-            Spacer()
         }
         .background(Constants.Colors.background)
-        .padding(Constants.Spacing.large)
-    }
-
-
-    var eventDate: some View {
-    Text(" createdAt: \(viewModel.createdAt.description)")
-        .font(Constants.Fonts.caption)
+        .padding(Constants.Spacing.medium)
     }
 
     var likeButton: some View{
@@ -44,14 +35,17 @@ struct AnnouncementView: View {
     }
 
     var announcementTitle: some View{
-            Text(viewModel.title)
-                .font(Constants.Fonts.title)
-                .lineLimit(2)
+        Text(viewModel.title)
+            .font(Constants.Fonts.title)
+            .lineLimit(2)
     }
 
     var announcementBody: some View{
-            Text(viewModel.body)
-                .font(Constants.Fonts.body)
+        VStack(alignment: .leading, spacing: Constants.Spacing.medium) {
+            announcementTitle
+            announcementAuthor
+            likeButton
+        }
     }
 
     var announcementAuthor: some View{
@@ -65,23 +59,23 @@ struct AnnouncementView: View {
     @ViewBuilder
     var headerImage: some View {
         if let imageURL = viewModel.imageURL {
-             AsyncImage(url: imageURL) { image in
-                 image
-                     .resizable()
-                     .scaledToFit()
-             } placeholder: {
-//                 ShimmeringAnimatedView()
-             }
-         } else {
-             Image("placeholder")
-                 .resizable()
-                 .scaledToFit()
-         }
+            AsyncImage(url: imageURL) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+            } placeholder: {
+                //                 ShimmeringAnimatedView()
+            }
+        } else {
+            Image("placeholder")
+                .resizable()
+                .scaledToFit()
+        }
     }
 }
 
 #Preview {
-    AnnouncementView(
+    AnnouncementCellView(
         viewModel: AnnouncementViewModel(
             id: UUID(),
             author: Author(id: "2223", name: "Jessica Brown"),
