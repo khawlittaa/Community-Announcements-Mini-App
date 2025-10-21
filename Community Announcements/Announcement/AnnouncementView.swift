@@ -64,13 +64,15 @@ struct AnnouncementView: View {
 
     @ViewBuilder
     var headerImage: some View {
-        if let imageURL = viewModel.imageURL {
-             AsyncImage(url: imageURL) { image in
+        if let imageURL = viewModel.image {
+             AsyncImage(url: URL(string: imageURL)) { image in
                  image
                      .resizable()
                      .scaledToFit()
              } placeholder: {
-//                 ShimmeringAnimatedView()
+                 Image("placeholder")
+                     .resizable()
+                     .scaledToFit()
              }
          } else {
              Image("placeholder")
@@ -78,17 +80,4 @@ struct AnnouncementView: View {
                  .scaledToFit()
          }
     }
-}
-
-#Preview {
-    AnnouncementView(
-        viewModel: AnnouncementViewModel(
-            id: UUID(),
-            author: Author(id: "2223", name: "Jessica Brown"),
-            title: "test community BBQ This Saturday",
-            body: "We’re hosting our annual neighborhood BBQ this Saturday at the park! Bring a side dish or dessert to share. Burgers, hot dogs, and veggie options will be provided. Family and friends are welcome!",
-            likes: 12,
-            onPressLike: {},
-            onPressFavorite: {})
-    )
 }

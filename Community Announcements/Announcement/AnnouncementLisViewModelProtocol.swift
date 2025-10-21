@@ -14,7 +14,7 @@ protocol AnnouncementViewModelProtocol: Identifiable {
     var body: String { get }
     var createdAt: Date { get }
     var likes: Int { get }
-    var imageURL: URL? { get }
+    var image: String? { get }
 
     var onPressLike: @MainActor () -> Void { get set }
     var onPressFavorite: @MainActor () -> Void { get set }

@@ -6,36 +6,26 @@
 //
 
 import Foundation
+import Combine
 
-class AnnouncementViewModel: AnnouncementViewModelProtocol, Identifiable {
-    var id: UUID
-    var author: Author
-    var title: String
-    var body: String
-    var createdAt: Date
-    var likes: Int
-    var imageURL: URL?
+class AnnouncementViewModel: ObservableObject, Identifiable {
+    let id: String
+    let author: Author
+    let title: String
+    let body: String
+    let createdAt: Date
+    @Published var likes: Int
+    let image: String?
+    let onPressLike: () async -> Void
 
-    var onPressLike: @MainActor @Sendable () -> Void
-    var onPressFavorite: @MainActor @Sendable () -> Void
-
-    init(id: UUID,
-         author: Author,
-         title: String,
-         body: String,
-         createdAt: Date = Date(),
-         likes: Int,
-         imageURL: URL? = nil,
-         onPressLike: @Sendable @escaping () -> Void,
-         onPressFavorite: @Sendable @escaping () -> Void) {
-        self.id = id
-        self.author = author
-        self.title = title
-        self.body = body
-        self.createdAt = createdAt
-        self.likes = likes
-        self.imageURL = imageURL
+    init(announcement: Announcement, onPressLike: @escaping () async -> Void) {
+        self.id = announcement.id
+        self.author = announcement.author
+        self.title = announcement.title
+        self.body = announcement.body
+        self.createdAt = announcement.createdAt
+        self.likes = announcement.likes
+        self.image = announcement.imageUrl
         self.onPressLike = onPressLike
-        self.onPressFavorite = onPressFavorite
     }
 }

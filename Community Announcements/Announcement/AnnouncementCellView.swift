@@ -22,8 +22,12 @@ struct AnnouncementCellView: View {
         .padding(Constants.Spacing.medium)
     }
 
-    var likeButton: some View{
+    // Modify likeButton in AnnouncementCellView to support async like action
+    var likeButton: some View {
         Button {
+            Task {
+                await viewModel.onPressLike()
+            }
         } label: {
             HStack {
                 Image(systemName: "hand.thumbsup.fill")
@@ -31,7 +35,9 @@ struct AnnouncementCellView: View {
                     .font(Constants.Fonts.subtitle)
             }
         }
-
+        .buttonStyle(BorderlessButtonStyle()) // to prevent row selection on tap
+        .accessibilityLabel("Like announcement")
+        .accessibilityValue("\(viewModel.likes) likes")
     }
 
     var announcementTitle: some View{
@@ -58,8 +64,8 @@ struct AnnouncementCellView: View {
 
     @ViewBuilder
     var headerImage: some View {
-        if let imageURL = viewModel.imageURL {
-            AsyncImage(url: imageURL) { image in
+        if let imageURL = viewModel.image {
+            AsyncImage(url: URL(string: imageURL)) { image in
                 image
                     .resizable()
                     .scaledToFit()
@@ -74,15 +80,3 @@ struct AnnouncementCellView: View {
     }
 }
 
-#Preview {
-    AnnouncementCellView(
-        viewModel: AnnouncementViewModel(
-            id: UUID(),
-            author: Author(id: "2223", name: "Jessica Brown"),
-            title: "test community BBQ This Saturday",
-            body: "We’re hosting our annual neighborhood BBQ this Saturday at the park! Bring a side dish or dessert to share. Burgers, hot dogs, and veggie options will be provided. Family and friends are welcome!",
-            likes: 12,
-            onPressLike: {},
-            onPressFavorite: {})
-    )
-}
