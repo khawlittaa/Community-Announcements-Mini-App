@@ -1,0 +1,146 @@
+[
+  {
+    "id": "d42a9c84-38cf-4ef3-85d9-3e8b13ab7f10",
+    "title": "Community BBQ This Saturday",
+    "body": "We\u2019re hosting our annual neighborhood BBQ this Saturday at the park! Bring a side dish or dessert to share. Burgers, hot dogs, and veggie options will be provided. Family and friends are welcome!",
+    "author": {
+      "id": "aa7c1ef5-72d4-4d55-bb12-f593f2a44b19",
+      "name": "Jessica Brown"
+    },
+    "createdAt": "2025-07-20T10:00:00Z",
+    "likes": 15,
+    "imageUrl": "https://images.pexels.com/photos/5637681/pexels-photo-5637681.jpeg?_gl=1*1uigv0g*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk2NDMkajU5JGwwJGgw"
+  },
+  {
+    "id": "b31b67a2-d098-42b2-89cd-ecb3e3e13f24",
+    "title": "Lost Dog Near Maple Street",
+    "body": "Small golden retriever named Luna went missing last night near Maple and 4th. She\u2019s friendly but may be scared. Please call 555-0192 if you see her.",
+    "author": {
+      "id": "f93de73f-fdc7-4724-a9f1-972fc58b8f13",
+      "name": "Daniel Rivera"
+    },
+    "createdAt": "2025-07-28T18:15:00Z",
+    "likes": 24,
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074_1280.jpg"
+  },
+  {
+    "id": "39fa83a7-0b9f-4a67-8af4-5fd2a38ffb7e",
+    "title": "Garage Sale Weekend",
+    "body": "Several neighbors are doing a community garage sale next weekend! Great chance to declutter and find some treasures. Tables available on a first\u2011come basis.",
+    "author": {
+      "id": "0f97f6c9-176c-4fd4-9bb7-492f97b15d62",
+      "name": "Linda Park"
+    },
+    "createdAt": "2025-08-03T09:30:00Z",
+    "likes": 33,
+    "imageUrl": "https://images.pexels.com/photos/16617569/pexels-photo-16617569.jpeg?_gl=1*1uigv0g*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk2NDMkajU5JGwwJGgw"
+  },
+  {
+    "id": "c53dcb1b-c00d-4cb7-a51b-3fc0d2cf9367",
+    "title": "Tree Trimming Schedule",
+    "body": "City crews will be trimming trees along Oak Avenue between Aug 10\u201312. Please move vehicles off the street during that time. Thanks for your cooperation!",
+    "author": {
+      "id": "6e84fdd5-69f0-4af3-b6a7-4cb17a6a6b75",
+      "name": "Neighborhood Association"
+    },
+    "createdAt": "2025-08-09T08:00:00Z",
+    "likes": 19,
+    "imageUrl": "https://images.pexels.com/photos/34371588/pexels-photo-34371588.jpeg?_gl=1*1v7zous*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk1NjAkajUzJGwwJGgw"
+  },
+  {
+    "id": "77f7b98d-3f9a-489f-87b8-0a54d8f47a15",
+    "title": "New Recycling Bins Arriving",
+    "body": "New blue recycling bins will be delivered to each home next week. Please start using them right away. Old bins will be picked up the following Monday.",
+    "author": {
+      "id": "cc13a91e-1099-4e90-93c0-13bc72f5de10",
+      "name": "City Waste Services"
+    },
+    "createdAt": "2025-08-16T11:45:00Z",
+    "likes": 27,
+    "imageUrl": "https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?_gl=1*1t5ikob*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk1NjAkajUzJGwwJGgw"
+  },
+  {
+    "id": "cf3eb46c-7b8e-4a31-b1b9-3722596a0ff9",
+    "title": "Neighborhood Watch Meeting",
+    "body": "We\u2019re restarting the neighborhood watch group! Meeting will be held at the community center on August 25 at 6 PM. Let\u2019s keep our streets safe together.",
+    "author": {
+      "id": "e06d1f8e-9424-47cb-b786-cbd3468a59a7",
+      "name": "Officer Martinez"
+    },
+    "createdAt": "2025-08-22T17:00:00Z",
+    "likes": 34,
+    "imageUrl": "https://images.pexels.com/photos/16617569/pexels-photo-16617569.jpeg?_gl=1*1uigv0g*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk2NDMkajU5JGwwJGgw"
+  },
+  {
+    "id": "a7f41d67-8361-4c5a-821f-02ec7985a9b3",
+    "title": "Community Garden Expansion",
+    "body": "We\u2019re adding six new plots to the community garden this fall! Sign\u2011ups open September 1. Priority goes to residents without existing plots. Bring your own tools if possible.",
+    "author": {
+      "id": "b79d0b43-62e1-47e7-84b9-71c4790939a2",
+      "name": "Garden Committee"
+    },
+    "createdAt": "2025-08-30T14:25:00Z",
+    "likes": 41,
+    "imageUrl": "https://images.pexels.com/photos/7658795/pexels-photo-7658795.jpeg?_gl=1*12fwtfl*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNjk4NzUkajU5JGwwJGgw"
+  },
+  {
+    "id": "bdc61a03-4e56-4de5-9b4f-cf74a442e85b",
+    "title": "Power Outage Notice",
+    "body": "There will be a planned power outage on September 8 from 1 AM to 5 AM for maintenance. Please plan accordingly and unplug sensitive electronics.",
+    "author": {
+      "id": "a64c22fa-bb7e-4f23-a2ab-33eae81253ff",
+      "name": "City Utilities"
+    },
+    "createdAt": "2025-09-02T13:00:00Z",
+    "likes": 22,
+    "imageUrl": null
+  },
+  {
+    "id": "e0f6d7be-02f0-4f12-b2d1-7a44c7e547eb",
+    "title": "Fall Clean-Up Day",
+    "body": "Our annual fall clean-up is coming up September 14. Volunteers needed to help collect trash, trim bushes, and repaint fences. Meet at the park entrance at 9 AM.",
+    "author": {
+      "id": "e70cf2bb-5e23-4b6e-b8c1-1487f84a066f",
+      "name": "Community Board"
+    },
+    "createdAt": "2025-09-10T10:00:00Z",
+    "likes": 36,
+    "imageUrl": "https://images.pexels.com/photos/7656988/pexels-photo-7656988.jpeg?_gl=1*1pkuzlv*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNzA4NjEkajU1JGwwJGgw"
+  },
+  {
+    "id": "89aee4c2-98a3-4b54-b531-316c9f0b739b",
+    "title": "Block Party Volunteers Needed",
+    "body": "We\u2019re looking for volunteers to help plan the October block party. Tasks include decorations, games, and food setup. Sign up online or drop by the clubhouse.",
+    "author": {
+      "id": "05e0e6d9-444d-48e3-96c3-fc2d18c02e13",
+      "name": "Sarah Thompson"
+    },
+    "createdAt": "2025-09-18T15:40:00Z",
+    "likes": 28,
+    "imageUrl": null
+  },
+  {
+    "id": "40f5acb2-091f-41de-a9a4-c0cf782b1732",
+    "title": "Halloween Decoration Contest",
+    "body": "Get ready for spooky season! Decorate your house for Halloween. Judging will happen on October 28 and prizes go to the top three homes. Everyone welcome to participate!",
+    "author": {
+      "id": "e0e90c32-b524-4e0b-b490-d5b9cc61fbb4",
+      "name": "Events Committee"
+    },
+    "createdAt": "2025-10-03T08:20:00Z",
+    "likes": 40,
+    "imageUrl": "https://images.pexels.com/photos/5435192/pexels-photo-5435192.jpeg?_gl=1*guotig*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNzA2NjYkajI4JGwwJGgw"
+  },
+  {
+    "id": "b25e9a64-3a2c-4636-9944-6e1a0e24cddf",
+    "title": "New Playground Opening",
+    "body": "We\u2019re excited to announce the grand opening of the new playground on October 15! Ribbon cutting starts at 10 AM with snacks and games for the kids. Thank you to everyone who donated and helped make it happen!",
+    "author": {
+      "id": "47a6e7a3-7d83-4c8a-a83b-6c842eaa40c2",
+      "name": "Parks & Rec"
+    },
+    "createdAt": "2025-10-15T10:00:00Z",
+    "likes": 52,
+    "imageUrl": "https://images.pexels.com/photos/5372792/pexels-photo-5372792.jpeg?_gl=1*1i5i2rm*_ga*MTkzMDA0MjY4OC4xNzYwOTkwMzU0*_ga_8JE65Q40S6*czE3NjEwNjkxODgkbzMkZzEkdDE3NjEwNzA3ODIkajM5JGwwJGgw"
+  }
+]

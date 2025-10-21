@@ -70,9 +70,7 @@ struct AnnouncementView: View {
                      .resizable()
                      .scaledToFit()
              } placeholder: {
-                 Image("placeholder")
-                     .resizable()
-                     .scaledToFit()
+                 LoadingImageView()
              }
          } else {
              Image("placeholder")

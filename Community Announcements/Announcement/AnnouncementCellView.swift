@@ -70,7 +70,7 @@ struct AnnouncementCellView: View {
                     .resizable()
                     .scaledToFit()
             } placeholder: {
-                //                 ShimmeringAnimatedView()
+                LoadingImageView()
             }
         } else {
             Image("placeholder")

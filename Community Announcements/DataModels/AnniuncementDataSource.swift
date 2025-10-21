@@ -9,7 +9,7 @@ import Foundation
 
 public class AnnouncementDataSource {
     public func fetchAnnouncements() async throws -> [Announcement] {
-        let url = URL(string: "http://localhost:8080/neighborhood_announcements.json")!
+        let url = URL(string: "http://localhost:8080/neighborhoodAnnouncements.json")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
